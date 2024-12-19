@@ -25,6 +25,8 @@
 .description p {
   margin-bottom: 15px;
   font-size: 16px;
+  font-weight: bold;
+  color: #0070f3;
 }
 
 .details span {

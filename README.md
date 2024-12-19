@@ -1,10 +1,23 @@
 ## Getting Started with ShopIQ App 
 
+## Technologies Used
+
+### Frontend
+- Next.js: For building the user interface.
+- Axios: For making HTTP requests to the backend.
+- CSS: For styling the components.
+
 ### SETUP INSTRUCTIONS
 
-```bash
-npm run dev
-```bash
+#### Clone Repository
+- `git clone https://github.com/thisisnitishyadav/ShopIQ-App.git` 
+- `cd shop-iq`
+
+#### Setup Frontend
+1. **Install dependencies:**\
+  `npm install`
+1. **Start the development server:**\
+  `npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

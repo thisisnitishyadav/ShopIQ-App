@@ -32,7 +32,7 @@ export default function ProductDetailPage() {
     };
 
     loadProduct();
-  }, [params.id]); 
+  }, [params.id]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -46,8 +46,8 @@ export default function ProductDetailPage() {
         </div>
         <div className={styles.right}>
           <h1 className={styles.title}>{product.title}</h1>
-          <p className={styles.price}>₹{product.price}</p>
           <h2 className={styles.description}>{product.description}</h2>
+          <p className={styles.price}>₹{product.price}</p>
           <span className={styles.rating}>Ratings: {product.rating} ⭐</span>
           <button className={styles.addToCart}>Add to Cart</button>
         </div>

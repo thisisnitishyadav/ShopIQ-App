@@ -1,33 +1,76 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-  }
-  
-  .logo a {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0070f3;
+}
+
+/* Hamburger icon (hidden by default, shown on small screens) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Dropdown menu for small screens (hidden by default) */
+.menu.responsive {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #333;
+  border: 1px solid #444;
+  width: 200px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.menu.responsive li {
+  margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .menu {
-    display: flex;
-    list-style: none;
+    display: none; /* Hide the menu on small screens */
   }
-  
-  .menu li {
-    margin: 0 15px;
+
+  .hamburger {
+    display: block; /* Show hamburger icon */
   }
-  
-  .menu a {
-    color: white;
-    font-size: 16px;
+
+  .menu.responsive {
+    display: flex; /* Show menu when toggled */
   }
-  
-  .menu a:hover {
-    color: #0070f3;
-  }
-  
+}

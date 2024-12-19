@@ -17,16 +17,22 @@
   max-width: 600px;
 }
 
-.title h1 {
+.title {
   font-size: 28px;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.description p {
-  margin-bottom: 15px;
-  font-size: 16px;
+.price{
+  font-size: 24px;
   font-weight: bold;
   color: #0070f3;
+}
+
+.description {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .details span {
@@ -36,14 +42,47 @@
   color: #555;
 }
 
+.rating {
+  display: block;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
 .addToCart {
   font-size: 16px;
+  font-weight: bold;
   background-color: #0070f3;
   color: white;
   padding: 10px 20px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .addToCart:hover {
   background-color: #005bb5;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .left, .right {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .left {
+    margin-bottom: 20px; /* Add space between sections */
+  }
+
+  .addToCart {
+    width: 100%; /* Full-width button on smaller screens */
+    text-align: center;
+  }
 }
